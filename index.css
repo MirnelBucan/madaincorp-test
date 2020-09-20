@@ -1,0 +1,51 @@
+html {
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container div {
+  width: 40%;
+}
+.container #player-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+#player-choice button {
+  flex: 1;
+  margin: 5px 0;
+  background-color: rgb(158, 208, 255);
+  border: none;
+  outline: none;
+}
+
+#player-choice button:hover {
+  flex: 1;
+  margin: 5px 0;
+  background-color: rgb(86, 170, 248);
+}
+
+#game-history {
+  display: none;
+}
+#game-history.active {
+  display: block;
+}
+
+#game-history ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 10px 0;
+}
+
+ul .round {
+  background-color: rgb(158, 208, 255);
+}

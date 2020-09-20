@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <h2>Simple rock paper scissors game</h2>
+    <hr />
+    <div class="container">
+      <div id="player-choice">
+        <button>Rock</button>
+        <button>Paper</button>
+        <button>Scissors</button>
+      </div>
+      <div>
+        <h3>Score</h3>
+        <p>Round: <span id="score-round">0</span></p>
+        <p>Player: <span id="score-player">0</span></p>
+        <p>Computer: <span id="score-computer">0</span></p>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h3>Status</h3>
+      <p>Player choice: <span id="choice-player"></span></p>
+      <p>Computer choice: <span id="choice-computer"></span></p>
+      <p>Winner: <span id="winner"></span></p>
+      <button id="toggle-history">Toggle history</button>
+    </div>
+    <hr />
+    <div id="game-history">
+      <ul></ul>
+    </div>
+    <script src="script/constants.js"></script>
+    <script src="script/helpers.js"></script>
+    <script src="script/game.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>
